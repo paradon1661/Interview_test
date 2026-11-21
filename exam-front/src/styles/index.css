@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Design tokens. Components use the Tailwind names mapped below, never raw hex values. */
+:root {
+  --header: #4caf50;          /* title bar (IT 10-1 / IT 10-2) */
+  --primary: #4472c4;         /* buttons */
+  --primary-hover: #3a63ad;
+  --primary-border: #2f528f;
+
+  --background: #f4f4f4;
+  --surface: #ffffff;
+
+  --text-primary: #222222;
+  --text-secondary: #666666;
+
+  --border: #333333;
+  --radio: #9e9e9e;           /* unselected choice */
+  --radio-border: #888888;
+  --radio-checked: #000000;   /* selected choice */
+
+  --danger: #c62828;
+  --danger-light: #fbeeee;
+}
+
+@theme inline {
+  --font-sans: 'Sarabun', 'Tahoma', ui-sans-serif, system-ui, sans-serif;
+
+  --color-header: var(--header);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-border: var(--primary-border);
+
+  --color-page: var(--background);
+  --color-surface: var(--surface);
+  --color-ink: var(--text-primary);
+  --color-ink-secondary: var(--text-secondary);
+  --color-line: var(--border);
+
+  --color-radio: var(--radio);
+  --color-radio-border: var(--radio-border);
+  --color-radio-checked: var(--radio-checked);
+
+  --color-danger: var(--danger);
+  --color-danger-light: var(--danger-light);
+}
+
+body {
+  @apply bg-page font-sans text-ink antialiased;
+}

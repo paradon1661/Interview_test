@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "exam-front", "runtimeExecutable": "npm", "runtimeArgs": ["--prefix", "exam-front", "run", "dev"], "port": 5173 }
+  ]
+}

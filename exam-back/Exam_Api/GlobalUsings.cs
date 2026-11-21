@@ -1,0 +1,20 @@
+// One project, so every Exam namespace is visible everywhere — no long `using` lists at the top of each file.
+global using Exam.Infrastructure.Data;
+global using Exam.Infrastructure.Data.Configurations;
+global using Exam.Infrastructure.Repositories;
+global using Exam.Modules.ExamResults.DTOs;
+global using Exam.Modules.ExamResults.Entities;
+global using Exam.Modules.ExamResults.Interfaces;
+global using Exam.Modules.ExamResults.Repositories;
+global using Exam.Modules.ExamResults.Services;
+global using Exam.Modules.ExamResults.Validators;
+global using Exam.Modules.Questions.DTOs;
+global using Exam.Modules.Questions.Entities;
+global using Exam.Modules.Questions.Interfaces;
+global using Exam.Modules.Questions.Repositories;
+global using Exam.Modules.Questions.Services;
+global using Exam.Shared.Exceptions;
+global using Exam.Shared.Filters;
+global using Exam.Shared.Middleware;
+global using Exam.Shared.Services;
+global using Exam.Shared.Wrappers;
